@@ -1,3 +1,6 @@
+* {
+  outline: red solid 2px;
+}
 html,
 body {
   height: 100%;
@@ -83,4 +86,86 @@ body {
   border-radius: 25px 0px 0px 25px;
   height: 100vh;
   overflow-y: auto; /* Enable vertical scrollbar */
+}
+
+.scroll {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.head1 {
+  color: #04b4e0;
+}
+
+.animated {
+  position: relative;
+  font-size: 24px;
+  padding-left: 5%;
+}
+
+.animated-info {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 60%;
+  position: relative;
+}
+
+.animated-item {
+  color: #ffc200;
+}
+
+.animated-item {
+  font-size: 26px;
+  line-height: inherit;
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  animation: BottomTotop 6s linear infinite 0s;
+}
+.animated-item:nth-child(2n + 2) {
+  animation-delay: 2s;
+}
+.animated-item:nth-child(3n + 3) {
+  animation-delay: 4s;
+}
+
+@keyframes BottomTotop {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.about > p {
+  color: #ededed;
+  line-height: 1.11111;
+  text-align: justify;
+  padding-left: 5%;
 }
