@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: red solid 2px;
-}
+} */
 html,
 body {
   height: 100%;
@@ -113,7 +113,7 @@ body {
 }
 
 .animated-item {
-  color: #ffc200;
+  color: #04b4e0;
 }
 
 .animated-item {
@@ -231,4 +231,164 @@ h2 {
 }
 .projects > p {
   margin-top: 0;
+}
+
+.skills {
+  width: 500px;
+  /* margin: 60px auto; */
+  color: #fff;
+}
+
+.skills li {
+  margin: 20px 0;
+  padding-left: 5%;
+}
+
+.bar {
+  background-color: #353b48;
+  display: block;
+  height: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #04b4e0;
+}
+
+.bar span {
+  height: 10px;
+  float: left;
+  background-color: #04b4e0;
+}
+
+.python {
+  width: 90%;
+  animation: python 2s;
+}
+.django {
+  width: 75%;
+  animation: django 2s;
+}
+
+.java {
+  width: 85%;
+  animation: java 2s;
+}
+.version {
+  width: 95%;
+  animation: version 2s;
+}
+
+.sql {
+  width: 80%;
+  animation: sql 2s;
+}
+
+.rdbms {
+  width: 75%;
+  animation: rdbms 2s;
+}
+
+.html {
+  width: 80%;
+  animation: html 2s;
+}
+
+.css {
+  width: 70%;
+  animation: css 2s;
+}
+
+.javascript {
+  width: 50%;
+
+  animation: javascript 2s;
+}
+@keyframes rdbms {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes sql {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes version {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes java {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes django {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 93%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%;
+  }
 }
