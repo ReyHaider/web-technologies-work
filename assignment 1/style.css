@@ -85,7 +85,7 @@ body {
   background-color: #1c1c1c;
   border-radius: 25px 0px 0px 25px;
   height: 100vh;
-  overflow-y: auto; /* Enable vertical scrollbar */
+  overflow-y: auto;
 }
 
 .scroll {
@@ -187,7 +187,9 @@ ul {
 .education > h3 {
   margin-top: 0;
 }
-
+.education > h4 {
+  color: #04b4e0;
+}
 .education > ul {
   display: flex;
   flex-direction: column;
@@ -212,7 +214,7 @@ ul {
   justify-self: flex-start;
 }
 
-li {
+.education li {
   list-style-type: none;
 }
 
@@ -242,6 +244,7 @@ h2 {
 .skills li {
   margin: 20px 0;
   padding-left: 5%;
+  list-style-type: none;
 }
 
 .bar {
@@ -391,4 +394,58 @@ h2 {
   100% {
     width: 50%;
   }
+}
+
+.certificate {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .certificate > h1 {
+  margin-bottom: 0px;
+} */
+
+.certificate > h2,
+h3 {
+  padding-left: 5%;
+  margin-top: 0px;
+}
+
+.certificate > ul {
+  padding-left: 10%;
+}
+
+.lists {
+  display: flex;
+}
+/* 
+.lists li {
+  list-style-type: circle;
+} */
+.lists > ul {
+  padding-left: 10%;
+}
+
+.fa-envelope {
+  color: #04b4e0;
+}
+
+.fa-envelope:hover {
+  color: #ededed;
+}
+
+.fa-phone {
+  color: #04b4e0;
+}
+
+.fa-phone:hover {
+  color: #ededed;
+}
+
+.fa-location-dot {
+  color: #04b4e0;
+}
+
+.fa-location-dot:hover {
+  color: #ededed;
 }
